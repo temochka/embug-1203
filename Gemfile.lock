@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    eventmachine (1.2.7)
+    ffi (1.9.25)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  eventmachine
+  ffi
+
+BUNDLED WITH
+   1.16.1
