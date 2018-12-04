@@ -90,12 +90,7 @@ Expected.
 ### Test 7. loading libembuga, then eventmachine (test_a_em.rb)
 
 ```
-# bundle exec test_em_a.rb
-47
-Error!
--1
-root@93b0624bf022:/checkout/embug-1203# cp test_em_a.rb test_a_em.rb
-root@93b0624bf022:/checkout/embug-1203# vim test_a_em.rb
+# bundle exec test_a_em.rb
 root@93b0624bf022:/checkout/embug-1203# bundle exec test_a_em.rb
 47
 terminate called after throwing an instance of 'std::runtime_error'
