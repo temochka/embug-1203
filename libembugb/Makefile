@@ -1,5 +1,7 @@
 all:
-	clang++ -stdlib=libstdc++ -shared -fpic -o libembugb.so libembugb.cpp
+	g++ -c -Wall -Werror -fpic libembugb.cpp
+	g++ -shared -o libembugb.so libembugb.o
 
 clean:
-	rm *.so
+	rm *.so *.o
+
