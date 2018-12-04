@@ -1,6 +1,6 @@
 # Ruby interpreter segfault related to EventMachine
 
-On Ubuntu 18.04 and Ruby 2.5.1 the EventMachine gem may cause Ruby to segfault if the process executes foreign code in other dynamic libraries linked to libc++.
+On Ubuntu 18.04 and Ruby 2.5.1 the EventMachine gem may cause YARV to segfault if the process tries to execute a foreign function from another dynamic library linked to libc++. EventMachine itself links to libstdc++ on Linux so my primary theory is library conflict in runtime.
 
 This repository attempts to provide a minimal reproduction scenario for this issue. It contains two C++ shared libraries with C interfaces: `libembuga` and `libembugb` and a number of tests, some of which cause Ruby to segfault.
 
